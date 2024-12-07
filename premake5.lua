@@ -4,6 +4,14 @@ workspace "Heavenly Polygon"
 
     configurations { "Debug", "Release" }
 
+    -- Define the location dynamically based on the action
+    if _ACTION then
+        location ("IDEs-spec/" .. _ACTION)
+    else
+        location "IDEs-spec/default"
+    end
+    
+
 outputdir = "%{cfg.buildcfg}/%{cfg.system}-%{cfg.architecture}"
 
 project "Heavenly Polygon"
