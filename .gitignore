@@ -1,7 +1,6 @@
 # Prerequisites
 *.d
-
-# Object files
+# --- General C Build Files ---
 *.o
 *.ko
 *.obj
@@ -9,24 +8,59 @@
 
 # Linker output
 *.ilk
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.lo
+*.la
+*.dylib
+*.pdb
+*.idb
+*.ds_store
 *.map
 *.exp
 
 # Precompiled Headers
 *.gch
 *.pch
+# --- Dependency Files ---
+*.d
+*.dep
 
 # Libraries
 *.lib
 *.a
 *.la
 *.lo
+# --- IDE and Editor Files ---
+.vscode/
+.idea/
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
 
 # Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
+# --- Visual Studio Build Files ---
+*.vcxproj
+*.vcxproj.*
+*.filters
+*.props
+*.targets
+*.sqlproj
+*.ps1
+*.publish.xml
 
 # Executables
 *.exe
@@ -41,6 +75,82 @@
 *.su
 *.idb
 *.pdb
+# Build output folders
+[Bb]uild/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Oo]bj/
+[Ll]og/
+*.ipch
+*.tlog/
+*.iobj
+*.ipdb
+
+# --- CMake Files ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+build/
+*_build/
+
+# --- Premake Specific ---
+*.make
+Makefile
+*.workspace
+*.project
+obj/
+bin/
+premake5.exe
+premake5
+
+# Ignore generated project files
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.xcodeproj
+*.gmake
+*.ninja
+
+# Ignore Premake output directories
+gen/
+Generated/
+intermediate/
+
+# --- Temporary Files ---
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# --- Backup Files ---
+*.bak
+*.old
+*.orig
+*.rej
+
+# --- OS-Specific ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.cache
+.project
 
 # Kernel Module Compile Results
 *.mod*
@@ -50,3 +160,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+# --- Git ---
+*.patch
+*.diff
+*.orig
+*.rej
+*.merge_file_*
