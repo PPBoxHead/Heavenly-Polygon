@@ -15,13 +15,10 @@ workspace "Heavenly Polygon"
 outputdir = "%{cfg.buildcfg}/%{cfg.system}-%{cfg.architecture}"
 
 project "Heavenly Polygon"
-    location "."
     kind "ConsoleApp"  -- Console-based application
 
     language "C"
     cdialect "C99"
-
-    staticruntime "on" -- Statically link runtime library (makes executable self-contained)
 
     targetdir ("bin/" .. outputdir)
     objdir ("bin/" .. outputdir .. "/obj_output")
@@ -52,7 +49,10 @@ project "Heavenly Polygon"
         ["Source Files/third-party*"] = { "third-party/*.c" },
         ["Header Files/*"] = { "src/**.h" },
         ["Header Files/third-party/*"] = { "third-party/include/**.h" },
-        ["Resource Files/Shaders"] = {  "resources/shaders/**.vert", "resources/shaders/**.frag"  }
+        ["Resource Files/Shaders"] = {
+            "resources/shaders/**.vert",
+            "resources/shaders/**.frag"
+        }
     }
 
 
@@ -63,9 +63,12 @@ project "Heavenly Polygon"
     filter "configurations:Debug"
         defines { "DEBUG" }
         runtime "Debug"
+        staticruntime "on" -- Statically link runtime library (makes executable self-contained)
         symbols "on"
 
     filter "configurations:Release"
         defines { "NDEBUG" }
         runtime "Release"
+        staticruntime "on" -- Statically link runtime library (makes executable self-contained)
         optimize "on"
+        

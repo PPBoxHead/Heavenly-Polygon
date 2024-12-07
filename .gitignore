@@ -21,7 +21,7 @@
 *.pch
 
 # Libraries
-*.lib
+# *.lib #commented this bcause I use static libs and they might not be added by error.
 *.a
 *.la
 *.lo
