@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+#include "utils/console_logger.h"
+
 
 int main() {
-	printf("Hello Heavenly Polygon! /n");
+	console_print(C_INFO, "Lol");
 
 	return 1;
 }

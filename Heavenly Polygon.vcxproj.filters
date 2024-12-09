@@ -15,5 +15,12 @@
     <ClCompile Include="third-party\glad.c">
       <Filter>Source Files\third-party</Filter>
     </ClCompile>
+    <ClCompile Include="src\utils\file_system.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\utils\console_logger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\file_system.h" />
   </ItemGroup>
 </Project>

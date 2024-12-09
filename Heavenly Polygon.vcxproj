@@ -96,7 +96,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\utils\file_system.c" />
     <ClCompile Include="third-party\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\utils\console_logger.h" />
+    <ClInclude Include="src\utils\file_system.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
