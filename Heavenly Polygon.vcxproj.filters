@@ -22,5 +22,10 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="src\utils\file_system.h" />
+    <ClInclude Include="src\renderer\hvp_vertex.h" />
+    <ClInclude Include="src\renderer\hvp_mesh.h" />
+    <ClInclude Include="src\renderer\hvp_model.h" />
+    <ClInclude Include="src\renderer\hvp_shader.h" />
+    <ClInclude Include="src\renderer\hvp_framebuffer.h" />
   </ItemGroup>
 </Project>

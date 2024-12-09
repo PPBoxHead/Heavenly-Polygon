@@ -1,0 +1,6 @@
+#ifndef HVP_FRAMEBUFFER_H
+#define HVP_FRAMEBUFFER_H
+
+
+
+#endif // !HVP_FRAMEBUFFER_H

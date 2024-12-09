@@ -100,6 +100,11 @@
     <ClCompile Include="third-party\glad.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\renderer\hvp_framebuffer.h" />
+    <ClInclude Include="src\renderer\hvp_mesh.h" />
+    <ClInclude Include="src\renderer\hvp_model.h" />
+    <ClInclude Include="src\renderer\hvp_shader.h" />
+    <ClInclude Include="src\renderer\hvp_vertex.h" />
     <ClInclude Include="src\utils\console_logger.h" />
     <ClInclude Include="src\utils\file_system.h" />
   </ItemGroup>
