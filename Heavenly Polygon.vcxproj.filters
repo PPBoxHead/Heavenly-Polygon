@@ -27,5 +27,6 @@
     <ClInclude Include="src\renderer\hvp_model.h" />
     <ClInclude Include="src\renderer\hvp_shader.h" />
     <ClInclude Include="src\renderer\hvp_framebuffer.h" />
+    <ClInclude Include="src\renderer\hvp_texture.h" />
   </ItemGroup>
 </Project>
