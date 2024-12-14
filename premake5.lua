@@ -32,7 +32,6 @@ project "Heavenly Polygon"
     }
 
     includedirs {
-        "src",
         "third-party/include"
     }
 
@@ -41,8 +40,8 @@ project "Heavenly Polygon"
     }
 
     links {
-        "glfw3.lib",       -- Link GLFW static library
-        "opengl32.lib"     -- Link OpenGL (default Windows OpenGL library)
+        "opengl32.lib",     -- Link OpenGL (default Windows OpenGL library)
+        "glfw3.lib"       -- Link GLFW static library
     }
 
         -- Organize Filters (Solution Explorer in Visual Studio)

@@ -7,26 +7,63 @@
     <Filter Include="Source Files\third-party">
       <UniqueIdentifier>{F00B90DE-DC30-DF5E-057C-C4EEF1FFDD7C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{2964E163-1548-A2B9-7EA8-9C0C6AAB8C3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{21EB8090-0D4E-1035-B6D3-48EBA215DCB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\renderer">
+      <UniqueIdentifier>{07E0DB57-734C-9752-3C40-2FB0A86BB9BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{6111B008-4DF5-705E-B655-6BB1A2585BE0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\hvp_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hvp_rendering_chip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\hvp_framebuffer.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\hvp_mesh.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\hvp_model.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\hvp_shader.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\hvp_texture.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\hvp_vertex.h">
+      <Filter>Header Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\console_logger.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\file_system.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\hvp_rendering_chip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="src\main.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\file_system.c">
+      <Filter>Source Files\utils</Filter>
     </ClCompile>
     <ClCompile Include="third-party\glad.c">
       <Filter>Source Files\third-party</Filter>
     </ClCompile>
-    <ClCompile Include="src\utils\file_system.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\utils\console_logger.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utils\file_system.h" />
-    <ClInclude Include="src\renderer\hvp_vertex.h" />
-    <ClInclude Include="src\renderer\hvp_mesh.h" />
-    <ClInclude Include="src\renderer\hvp_model.h" />
-    <ClInclude Include="src\renderer\hvp_shader.h" />
-    <ClInclude Include="src\renderer\hvp_framebuffer.h" />
-    <ClInclude Include="src\renderer\hvp_texture.h" />
   </ItemGroup>
 </Project>
