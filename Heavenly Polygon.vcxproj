@@ -46,6 +46,8 @@
     <IntDir>bin\Debug\windows-x86_64\obj_output\</IntDir>
     <TargetName>Heavenly Polygon</TargetName>
     <TargetExt>.exe</TargetExt>
+    <IncludePath>D:\C-Engines\Heavenly-Polygon\third-party\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\C-Engines\Heavenly-Polygon\third-party\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -53,6 +55,8 @@
     <IntDir>bin\Release\windows-x86_64\obj_output\</IntDir>
     <TargetName>Heavenly Polygon</TargetName>
     <TargetExt>.exe</TargetExt>
+    <IncludePath>D:\C-Engines\Heavenly-Polygon\third-party\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\C-Engines\Heavenly-Polygon\third-party\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -96,7 +100,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\hvp_global.h" />
-    <ClInclude Include="src\hvp_rendering_chip.h" />
     <ClInclude Include="src\renderer\hvp_framebuffer.h" />
     <ClInclude Include="src\renderer\hvp_mesh.h" />
     <ClInclude Include="src\renderer\hvp_model.h" />
@@ -107,7 +110,6 @@
     <ClInclude Include="src\utils\file_system.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\hvp_rendering_chip.c" />
     <ClCompile Include="src\main.c" />
     <ClCompile Include="src\utils\file_system.c" />
     <ClCompile Include="third-party\glad.c" />

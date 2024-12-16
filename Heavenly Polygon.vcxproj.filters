@@ -24,9 +24,6 @@
     <ClInclude Include="src\hvp_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\hvp_rendering_chip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\renderer\hvp_framebuffer.h">
       <Filter>Header Files\renderer</Filter>
     </ClInclude>
@@ -53,9 +50,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\hvp_rendering_chip.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
