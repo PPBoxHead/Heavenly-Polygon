@@ -4,7 +4,7 @@
 #include <GLFW/glfw3.h>
 
 #include "utils/console_logger.h"
-//#include "hvp_global.h"
+#include "hvp_global.h"
 
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* HVPG_window = glfwCreateWindow(800, 600, "MoonStation", NULL, NULL);
+    HVPG_window = glfwCreateWindow(800, 600, "MoonStation", NULL, NULL);
     if (!HVPG_window) {
         console_print(C_ERROR, "failed initializing the GLFW window");
         glfwTerminate();

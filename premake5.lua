@@ -40,8 +40,16 @@ project "Heavenly Polygon"
     }
 
     links {
-        "opengl32.lib",     -- Link OpenGL (default Windows OpenGL library)
-        "glfw3.lib"       -- Link GLFW static library
+        -- Link OpenGL (default Windows OpenGL library)
+        "opengl32.lib",
+        -- This are GLFW dependencies:
+        "gdi32",
+        "user32",
+        "kernel32",
+        "advapi32",
+        "winmm",
+        -- Link GLFW static library
+        "glfw3.lib"
     }
 
         -- Organize Filters (Solution Explorer in Visual Studio)
@@ -58,18 +66,20 @@ project "Heavenly Polygon"
 
 
     filter "system:windows"
-        systemversion "latest" -- Use latest Windows SDK
+        -- Use latest Windows SDK
+        systemversion "latest"
+        defines { "GLFW_STATIC" }
 
 
     filter "configurations:Debug"
         defines { "DEBUG" }
         runtime "Debug"
-        staticruntime "on" -- Statically link runtime library (makes executable self-contained)
+        staticruntime "off"
         symbols "on"
 
     filter "configurations:Release"
         defines { "NDEBUG" }
         runtime "Release"
-        staticruntime "on" -- Statically link runtime library (makes executable self-contained)
+        staticruntime "off"
         optimize "on"
         
