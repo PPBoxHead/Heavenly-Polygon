@@ -47,10 +47,10 @@ static void console_print(logType log, const char* format, ...) {
             fprintf(stderr, "\033[0;38;5;196m[ERROR]::\033[0m%s\033[0m\n", buffer);
             break;
         case C_WARNING:
-            fprintf(stderr, "\033[0;38;5;166m[WARNING]::\033[0m%s\033[0m\n", buffer);
+            fprintf(stderr, "\033[0;38;5;214m[WARNING]::\033[0m%s\033[0m\n", buffer);
             break;
         case C_INFO:
-            fprintf(stdout, "\033[0;38;5;67m[INFO]::\033[0m%s\033[0m\n", buffer);
+            fprintf(stdout, "\033[0;38;5;44m[INFO]::\033[0m%s\033[0m\n", buffer);
             break;
     }
 

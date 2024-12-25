@@ -8,7 +8,9 @@
 
 
 int main() {
-	console_print(C_INFO, "Lol");
+    console_print(C_INFO, "Lol");
+    console_print(C_WARNING, "Lol");
+    console_print(C_ERROR, "Lol");
 
     if (!glfwInit()) {
         console_print(C_ERROR, "failed initializing GLFW");
