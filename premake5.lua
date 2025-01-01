@@ -1,6 +1,6 @@
 workspace "Heavenly Polygon"
     architecture "x64"
-    startproject "OpenGL_Project"
+    startproject "Heavenly Polygon"
 
     configurations { "Debug", "Release" }
 
