@@ -27,11 +27,11 @@ Note that at the moment of writing this (05/012/2024) may not all the features c
 
 Heavenly Polygon often relies on the use of single-header or static libraries. I did it like this due to how simple it is to setup and add the kind of libraries which will be listered right here:
 
-- C (emedded in Lua?) :o:
-- OpenGL 3.3 (3D and 2D graphics) <-- GLAD :white_check_mark:
-- OpenAL (audio) :negative_squared_cross_mark:
-- GLFW (window and input handler) :white_check_mark:
-- cglm (math library) :white_check_mark:
-- cgltf (glTF/glb loader) :white_check_mark:
-- free_type (font loader) :negative_squared_cross_mark:
-- stb_image (image loading) :white_check_mark:
+- [ ] C (emedded in Lua?)
+- [x] OpenGL 3.3 (3D and 2D graphics) <-- GLAD
+- [ ] OpenAL (audio)
+- [x] GLFW (window and input handler)
+- [x] cglm (math library)
+- [x] cgltf (glTF/glb loader)
+- [ ] free_type (font loader)
+- [x] stb_image (image loading)
