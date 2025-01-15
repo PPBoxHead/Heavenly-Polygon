@@ -59,5 +59,6 @@
     <ClCompile Include="third-party\glad.c">
       <Filter>Source Files\third-party</Filter>
     </ClCompile>
+    <ClCompile Include="src\renderer\hvp_shader.c" />
   </ItemGroup>
 </Project>

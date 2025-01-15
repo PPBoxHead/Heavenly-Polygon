@@ -107,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\renderer\hvp_shader.c" />
     <ClCompile Include="src\utils\file_system.c" />
     <ClCompile Include="third-party\glad.c" />
   </ItemGroup>

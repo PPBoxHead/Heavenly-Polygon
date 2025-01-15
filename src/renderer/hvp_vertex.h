@@ -9,7 +9,6 @@ typedef struct {
 	vec3 v_normal;
 	vec3 v_color;
 	vec2 v_uv;
-} VertexData;
+} HVP_Vertex;
 
 #endif // !HVP_VERTEX_H
-

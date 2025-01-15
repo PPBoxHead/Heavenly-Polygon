@@ -29,10 +29,6 @@ int main() {
     }
     glfwMakeContextCurrent(HVPG_window);
 
-    //glfwSetKeyCallback(ms_window, _key_callback);
-    //glfwGetWindowSize(ms_window, &window_width, &window_height);
-    //glfwSetWindowSizeCallback(ms_window, _window_size_callback);
-    //glfwSetFramebufferSizeCallback(ms_window, _framebuffer_size_callback);
     glfwSwapInterval(1);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
