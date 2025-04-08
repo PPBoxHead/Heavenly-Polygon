@@ -60,5 +60,6 @@
       <Filter>Source Files\third-party</Filter>
     </ClCompile>
     <ClCompile Include="src\renderer\hvp_shader.c" />
+    <ClCompile Include="src\renderer\hvp_framebuffer.c" />
   </ItemGroup>
 </Project>
